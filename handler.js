@@ -60,6 +60,28 @@ function degree(num,n){
 }
 
 
+function degree2(num,n){
+    let answer=1
+    if (n===0){
+        return 1
+    }
+    else if(n<0){
+        for (let i=0;i>n;i--){
+            answer=answer*num
+        }
+        return 1/answer
+    }
+   else {
+        for (let i=0;i<n;i++){
+            answer=answer*num
+        }
+        return answer
+    }
+
+
+}
+
+
 
 function flatNew(items,depth) {
     const arr = [];
